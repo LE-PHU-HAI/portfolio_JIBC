@@ -1,0 +1,481 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.img-of {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+}
+.col{
+    display:table-cell;
+    justify-content: space-between; 
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+.col-half{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-third{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section
+{
+    background: #f2f2fc;
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.text-center{
+    text-align: center;
+}
+.mt-75{
+    margin-top: 75px !important ; 
+}
+.mb-75
+{
+    margin-bottom: 75px;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(#8490ff,#62bdfc);
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 40px;
+    border: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3 ease;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 20px 20px 0 rgb(132 144 255 / 30%);
+}
+.flex{
+    display: flex
+}
+.center{
+    justify-content: space-between;
+}
+
+.clear{
+    clear: both;
+}
+
+/* 
+1.vị trí
+2.kích thước
+3. màu sắc
+4. kiểu dáng  */
+/* main */
+
+/* social */
+.social{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    transform: translateY(-50);
+}
+.social ul li{
+    list-style: none;
+    margin: 32px 0px;
+}
+.social ul li i{
+    font-size: 24px;
+    background: -webkit-linear-gradient(#8490ff,#62bdfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.social ul li i:hover{
+    transform: scale(1.2) translateY(-6px);
+    transition: 0.3s;
+}
+
+#header{
+    height: 70px;
+    background-color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    display: inline;
+    text-align: left;
+    line-height: 70px;  
+    padding-left: 50px;
+}
+.nav-logo a{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(#8490ff,#62bdfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#nav{
+    display: inline-block;
+}
+#nav> li{
+    display: inline-block; 
+
+}
+#nav li{
+position: relative;
+
+}
+
+#nav > li > a {
+    color: #302e4d;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+#nav li a:hover{
+    color: #8490ff;
+    transition: ease 0.5s;
+}
+/* home */
+#home{
+    width: 100%;
+    background-color: #f2f2fc;
+}
+#home .text-content{
+    margin-top: -80px;
+    text-align: right;
+}
+#home .text-content .img-hai{
+    margin-top: -259px;
+}
+.text-heading{
+    font-size: 60px;
+    margin: 20px;
+    line-height: 1.2;
+    text-align: left;
+    padding-top: 150px;
+}
+.text-heading span
+{
+    font-family: 'Clicker Script' , cursive;
+    color: #ec1839;
+}
+.text-description{
+    text-align: left;
+    margin:0px 45px 16px ;
+    color: #777777;
+    line-height: 1.5;
+}
+/* content */
+.content-section{
+    padding-top: 120px;
+    display: flex;
+    margin-bottom: 150px;
+}
+.content-heading{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.content-section-heading{
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 500px;
+}
+.about-content{
+    color: #777777;
+}
+.content-img{
+    margin-left: 200px;
+    width: 30%;
+}
+.container
+{
+    padding-left: 35px;
+    padding-top: 75px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    flex:0 0 100%;
+    min-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: #302e4d;
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #ec1839;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: #ec1839;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+.about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-content .about-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-content .about-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #302e4d;
+}
+.about-content .about-text h3 span
+{
+    color: #ec1839;
+}
+.about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+}
+.personal-info
+{
+    flex:0 0 65%;
+    max-width: 65%;
+    margin-top: 40px;
+}
+.personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #302e4d;
+    border-bottom: 1px solid #e8dfec;
+}
+.personal-info .info-item p span
+{
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+}
+/* hobby */
+/* #hobby
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+} */
+
+.heading-hobby{
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+.hobby-list{
+    display: flex;
+    align-content: space-around;
+}
+.content-hobby p
+{
+    margin: 30px;
+}
+
+.hobby-img{
+    width: 80%;
+}
+/* country */
+.heading-country{
+    font-size: 40px;
+}
+.country-img{
+    width: 25%;
+    margin-right: 26px;
+}
+.about-country{
+    text-align: justify;
+    margin: 75px;
+}
+.section-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.section-title h2
+{
+    font-size: 40px;
+}
+/* contact */
+.contact-title
+{
+    color: #ec1839;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: #f2f2fc;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: #ec1839;
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color:#302e4d;
+    text-transform: capitalize;
+    margin: 15px 0 15px;
+}
+.contact .contact-info-item p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    font-weight: 400;
+}
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item
+{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #fdf9ff;
+    border: 1px solid #e8dfec;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #504e70;
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control
+{
+    height: 140px;
+}
+.contact .contact-form .btn
+{
+    height: 50px;
+    padding: 0 50px;
+}
+/* footer */
+#footer{
+    padding: 50px 16px;
+    text-align: center;
+    background: linear-gradient(#8490ff,#62bdfc);
+}
+
+
+
+
+
